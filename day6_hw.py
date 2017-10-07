@@ -4,6 +4,7 @@ import turtle as t
 t.bgcolor("skyblue")
 t.color("brown")
 
+            #에펠탑그리기
 t.speed(0)
 t.lt(90)
 t.up()      #꼭대기를 위로 올리기 위해 올라가는 과정은 펜을 닿지 않게하기 위함
