@@ -1,3 +1,5 @@
+import turtle as t
+import math
 
 t.bgcolor("skyblue")
 t.color("brown")
