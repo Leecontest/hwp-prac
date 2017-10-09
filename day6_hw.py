@@ -1,10 +1,12 @@
 import turtle as t
+import random
+
+#에펠탑 그리기 
 
 
-t.bgcolor("skyblue")
-t.color("brown")
+t.bgcolor("black")
+t.color("gold")
 
-            #에펠탑그리기
 t.speed(0)
 t.lt(90)
 t.up()      #꼭대기를 위로 올리기 위해 올라가는 과정은 펜을 닿지 않게하기 위함
@@ -386,7 +388,18 @@ for x in range(3):      #하단부 오른쪽 x자 치기
     t.fd(62.482)
     t.rt(25.67)
 
-
+for a in range(200):        # 눈 내림을 표현
+    t.color("white")  
+    t.up()                  # 펜을 올림
+    x = random.randint(-450,450)    
+    y = random.randint(-450,450)    
+    t.goto(x, y)    # 랜덤한 위치를 지정
+    t.down()        # 펜을 내림
+    b = random.randint(1,5) 
+    for c in range(10): #눈의 크기도 다르게 지정
+        t.fd(b)
+        t.lt(165)
+    t.up()
 
 
 
